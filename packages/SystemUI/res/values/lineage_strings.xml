@@ -125,4 +125,7 @@
 
     <!-- Oroño clock -->
     <string name="date_long_title_today">Today is %s</string>
+
+   <!-- Change clockface -->
+    <string name="change_clock_face">Swipe to change the clock face</string>
 </resources>
