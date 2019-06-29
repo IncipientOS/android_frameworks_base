@@ -128,4 +128,8 @@
 
    <!-- Change clockface -->
     <string name="change_clock_face">Swipe to change the clock face</string>
+    
+    <!-- Gaming mode -->
+    <string name="gaming_mode_not_enabled">Gaming mode is disabled in settings</string>
+    <string name="quick_settings_gaming_mode_label">Gaming mode</string>
 </resources>
