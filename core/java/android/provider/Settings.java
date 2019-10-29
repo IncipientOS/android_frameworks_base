@@ -4880,6 +4880,15 @@ public final class Settings {
         public static final String DATA_DISABLED_ICON = "data_disabled_icon";
 
         /**
+         * Whether allowing pocket service to register sensors and dispatch informations.
+         *   0 = disabled
+         *   1 = enabled
+         * @author Carlo Savignano
+         * @hide
+         */
+        public static final String POCKET_JUDGE = "pocket_judge";
+
+        /**
          * Enable/Disable screenshot sound
          * @hide
          */
@@ -5039,6 +5048,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(DISPLAY_COLOR_MODE);
             PRIVATE_SETTINGS.add(AMBIENT_NOTIFICATION_LIGHT);
             PRIVATE_SETTINGS.add(AMBIENT_NOTIFICATION_LIGHT_AUTOMATIC);
+            PRIVATE_SETTINGS.add(POCKET_JUDGE);
         }
 
         /**
