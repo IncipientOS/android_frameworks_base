@@ -27932,6 +27932,55 @@ package android.media.audiofx {
     field public short strength;
   }
 
+  public class DiracSound extends android.media.audiofx.AudioEffect {
+    ctor public DiracSound(int, int);
+    method public int getHeadsetType() throws java.lang.IllegalArgumentException, java.lang.IllegalStateException, java.lang.UnsupportedOperationException;
+    method public int getHifiMode() throws java.lang.IllegalArgumentException, java.lang.IllegalStateException, java.lang.UnsupportedOperationException;
+    method public float getLevel(int) throws java.lang.IllegalArgumentException, java.lang.IllegalStateException, java.lang.UnsupportedOperationException;
+    method public int getMode() throws java.lang.IllegalArgumentException, java.lang.IllegalStateException, java.lang.UnsupportedOperationException;
+    method public int getMovie() throws java.lang.IllegalArgumentException, java.lang.IllegalStateException, java.lang.UnsupportedOperationException;
+    method public int getMovieMode() throws java.lang.IllegalArgumentException, java.lang.IllegalStateException, java.lang.UnsupportedOperationException;
+    method public int getMusic() throws java.lang.IllegalArgumentException, java.lang.IllegalStateException, java.lang.UnsupportedOperationException;
+    method public int getSpeakerStereoMode() throws java.lang.IllegalArgumentException, java.lang.IllegalStateException, java.lang.UnsupportedOperationException;
+    method public void setHeadsetType(int) throws java.lang.IllegalArgumentException, java.lang.IllegalStateException, java.lang.UnsupportedOperationException;
+    method public void setHifiMode(int) throws java.lang.IllegalArgumentException, java.lang.IllegalStateException, java.lang.UnsupportedOperationException;
+    method public void setLevel(int, float) throws java.lang.IllegalArgumentException, java.lang.IllegalStateException, java.lang.UnsupportedOperationException;
+    method public void setMode(int) throws java.lang.IllegalArgumentException, java.lang.IllegalStateException, java.lang.UnsupportedOperationException;
+    method public void setMovie(int) throws java.lang.IllegalArgumentException, java.lang.IllegalStateException, java.lang.UnsupportedOperationException;
+    method public void setMovieMode(int) throws java.lang.IllegalArgumentException, java.lang.IllegalStateException, java.lang.UnsupportedOperationException;
+    method public void setMusic(int) throws java.lang.IllegalArgumentException, java.lang.IllegalStateException, java.lang.UnsupportedOperationException;
+    method public void setSpeakerStereoMode(int) throws java.lang.IllegalArgumentException, java.lang.IllegalStateException, java.lang.UnsupportedOperationException;
+    field public static final int DIRACSOUND_HEADSET_EM001 = 15; // 0xf
+    field public static final int DIRACSOUND_HEADSET_EM006 = 18; // 0x12
+    field public static final int DIRACSOUND_HEADSET_EM007 = 16; // 0x10
+    field public static final int DIRACSOUND_HEADSET_EM013 = 19; // 0x13
+    field public static final int DIRACSOUND_HEADSET_EM015 = 20; // 0x14
+    field public static final int DIRACSOUND_HEADSET_EM017 = 21; // 0x15
+    field public static final int DIRACSOUND_HEADSET_EM018 = 22; // 0x16
+    field public static final int DIRACSOUND_HEADSET_EM019 = 23; // 0x17
+    field public static final int DIRACSOUND_HEADSET_EM303 = 13; // 0xd
+    field public static final int DIRACSOUND_HEADSET_EM304 = 14; // 0xe
+    field public static final int DIRACSOUND_HEADSET_GENERAL = 5; // 0x5
+    field public static final int DIRACSOUND_HEADSET_GENERAL_INEAR = 6; // 0x6
+    field public static final int DIRACSOUND_HEADSET_HM004 = 17; // 0x11
+    field public static final int DIRACSOUND_HEADSET_MEP100 = 1; // 0x1
+    field public static final int DIRACSOUND_HEADSET_MEP200 = 2; // 0x2
+    field public static final int DIRACSOUND_HEADSET_MK101 = 7; // 0x7
+    field public static final int DIRACSOUND_HEADSET_MK301 = 8; // 0x8
+    field public static final int DIRACSOUND_HEADSET_MK303 = 9; // 0x9
+    field public static final int DIRACSOUND_HEADSET_MO701 = 10; // 0xa
+    field public static final int DIRACSOUND_HEADSET_MR102 = 11; // 0xb
+    field public static final int DIRACSOUND_HEADSET_NONE = 0; // 0x0
+    field public static final int DIRACSOUND_HEADSET_PHD = 12; // 0xc
+    field public static final int DIRACSOUND_HEADSET_PISTON100 = 3; // 0x3
+    field public static final int DIRACSOUND_HEADSET_PISTON200 = 4; // 0x4
+    field public static final int DIRACSOUND_MODE_MOVIE = 1; // 0x1
+    field public static final int DIRACSOUND_MODE_MOVIE_CINEMA = 0; // 0x0
+    field public static final int DIRACSOUND_MODE_MOVIE_CINIMA = 0; // 0x0
+    field public static final int DIRACSOUND_MODE_MOVIE_STUDIO = 1; // 0x1
+    field public static final int DIRACSOUND_MODE_MUSIC = 0; // 0x0
+  }
+
   public final class DynamicsProcessing extends android.media.audiofx.AudioEffect {
     ctor public DynamicsProcessing(int);
     ctor public DynamicsProcessing(int, int, @Nullable android.media.audiofx.DynamicsProcessing.Config);
@@ -28228,6 +28277,55 @@ package android.media.audiofx {
     method public float getTargetGain() throws java.lang.IllegalArgumentException, java.lang.IllegalStateException, java.lang.UnsupportedOperationException;
     method public void setTargetGain(int) throws java.lang.IllegalArgumentException, java.lang.IllegalStateException, java.lang.UnsupportedOperationException;
     field public static final int PARAM_TARGET_GAIN_MB = 0; // 0x0
+  }
+
+  public class MiSound extends android.media.audiofx.AudioEffect {
+    ctor public MiSound(int, int);
+    method public int getHeadsetType() throws java.lang.IllegalArgumentException, java.lang.IllegalStateException, java.lang.UnsupportedOperationException;
+    method public int getHifiMode() throws java.lang.IllegalArgumentException, java.lang.IllegalStateException, java.lang.UnsupportedOperationException;
+    method public float getLevel(int) throws java.lang.IllegalArgumentException, java.lang.IllegalStateException, java.lang.UnsupportedOperationException;
+    method public int getMode() throws java.lang.IllegalArgumentException, java.lang.IllegalStateException, java.lang.UnsupportedOperationException;
+    method public int getMovie() throws java.lang.IllegalArgumentException, java.lang.IllegalStateException, java.lang.UnsupportedOperationException;
+    method public int getMovieMode() throws java.lang.IllegalArgumentException, java.lang.IllegalStateException, java.lang.UnsupportedOperationException;
+    method public int getMusic() throws java.lang.IllegalArgumentException, java.lang.IllegalStateException, java.lang.UnsupportedOperationException;
+    method public int getSpeakerStereoMode() throws java.lang.IllegalArgumentException, java.lang.IllegalStateException, java.lang.UnsupportedOperationException;
+    method public void setHeadsetType(int) throws java.lang.IllegalArgumentException, java.lang.IllegalStateException, java.lang.UnsupportedOperationException;
+    method public void setHifiMode(int) throws java.lang.IllegalArgumentException, java.lang.IllegalStateException, java.lang.UnsupportedOperationException;
+    method public void setLevel(int, float) throws java.lang.IllegalArgumentException, java.lang.IllegalStateException, java.lang.UnsupportedOperationException;
+    method public void setMode(int) throws java.lang.IllegalArgumentException, java.lang.IllegalStateException, java.lang.UnsupportedOperationException;
+    method public void setMovie(int) throws java.lang.IllegalArgumentException, java.lang.IllegalStateException, java.lang.UnsupportedOperationException;
+    method public void setMovieMode(int) throws java.lang.IllegalArgumentException, java.lang.IllegalStateException, java.lang.UnsupportedOperationException;
+    method public void setMusic(int) throws java.lang.IllegalArgumentException, java.lang.IllegalStateException, java.lang.UnsupportedOperationException;
+    method public void setSpeakerStereoMode(int) throws java.lang.IllegalArgumentException, java.lang.IllegalStateException, java.lang.UnsupportedOperationException;
+    field public static final int MISOUND_HEADSET_EM001 = 15; // 0xf
+    field public static final int MISOUND_HEADSET_EM006 = 18; // 0x12
+    field public static final int MISOUND_HEADSET_EM007 = 16; // 0x10
+    field public static final int MISOUND_HEADSET_EM013 = 19; // 0x13
+    field public static final int MISOUND_HEADSET_EM015 = 20; // 0x14
+    field public static final int MISOUND_HEADSET_EM017 = 21; // 0x15
+    field public static final int MISOUND_HEADSET_EM018 = 22; // 0x16
+    field public static final int MISOUND_HEADSET_EM019 = 23; // 0x17
+    field public static final int MISOUND_HEADSET_EM303 = 13; // 0xd
+    field public static final int MISOUND_HEADSET_EM304 = 14; // 0xe
+    field public static final int MISOUND_HEADSET_GENERAL = 5; // 0x5
+    field public static final int MISOUND_HEADSET_GENERAL_INEAR = 6; // 0x6
+    field public static final int MISOUND_HEADSET_HM004 = 17; // 0x11
+    field public static final int MISOUND_HEADSET_MEP100 = 1; // 0x1
+    field public static final int MISOUND_HEADSET_MEP200 = 2; // 0x2
+    field public static final int MISOUND_HEADSET_MK101 = 7; // 0x7
+    field public static final int MISOUND_HEADSET_MK301 = 8; // 0x8
+    field public static final int MISOUND_HEADSET_MK303 = 9; // 0x9
+    field public static final int MISOUND_HEADSET_MO701 = 10; // 0xa
+    field public static final int MISOUND_HEADSET_MR102 = 11; // 0xb
+    field public static final int MISOUND_HEADSET_NONE = 0; // 0x0
+    field public static final int MISOUND_HEADSET_PHD = 12; // 0xc
+    field public static final int MISOUND_HEADSET_PISTON100 = 3; // 0x3
+    field public static final int MISOUND_HEADSET_PISTON200 = 4; // 0x4
+    field public static final int MISOUND_MODE_MOVIE = 1; // 0x1
+    field public static final int MISOUND_MODE_MOVIE_CINEMA = 0; // 0x0
+    field public static final int MISOUND_MODE_MOVIE_CINIMA = 0; // 0x0
+    field public static final int MISOUND_MODE_MOVIE_STUDIO = 1; // 0x1
+    field public static final int MISOUND_MODE_MUSIC = 0; // 0x0
   }
 
   public class NoiseSuppressor extends android.media.audiofx.AudioEffect {
