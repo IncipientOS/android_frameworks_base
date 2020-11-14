@@ -41,4 +41,7 @@
     <!-- Media Player -->
     <dimen name="quick_settings_top_margin_media">4dp</dimen>
     <dimen name="quick_settings_top_margin_media_extra">10dp</dimen>
+    
+    <!-- Screen Record -->
+    <dimen name="screenrecord_dot_size">48dp</dimen>
 </resources>
