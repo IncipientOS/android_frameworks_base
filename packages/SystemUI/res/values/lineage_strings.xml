@@ -16,6 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+<<<<<<< HEAD
     <!-- QS customizer -->
     <string name="drag_or_tap_to_add_tiles">Drag or tap to add/remove tiles</string>
 
@@ -128,4 +129,7 @@
 
    <!-- Change clockface -->
     <string name="change_clock_face">Swipe to change the clock face</string>
+
+    <!-- Now playing lockscreen music Ticker -->
+    <string name="ambientmusic_songinfo" formatted="false">%s by %s</string>
 </resources>
