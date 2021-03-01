@@ -37,4 +37,8 @@
 
     <!-- Oroño clock -->
     <dimen name="clock_oronos_outline_size">4dp</dimen>
+
+    <!-- Media Player -->
+    <dimen name="quick_settings_top_margin_media">4dp</dimen>
+    <dimen name="quick_settings_top_margin_media_extra">10dp</dimen>
 </resources>
