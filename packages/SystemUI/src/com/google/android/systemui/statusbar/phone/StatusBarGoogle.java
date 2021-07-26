@@ -16,7 +16,6 @@ import com.android.internal.logging.MetricsLogger;
 import com.android.keyguard.KeyguardUpdateMonitor;
 import com.android.keyguard.ViewMediatorCallback;
 import com.android.systemui.dagger.qualifiers.UiBackground;
-import com.android.systemui.Dependency;
 import com.android.systemui.InitController;
 import com.android.systemui.assist.AssistManager;
 import com.android.systemui.broadcast.BroadcastDispatcher;
@@ -89,15 +88,16 @@ import com.android.systemui.statusbar.policy.UserInfoControllerImpl;
 import com.android.systemui.statusbar.policy.UserSwitcherController;
 import com.android.systemui.volume.VolumeComponent;
 
+<<<<<<< HEAD
 import com.google.android.systemui.LiveWallpaperScrimController;
 import com.google.android.systemui.NotificationLockscreenUserManagerGoogle;
 import com.google.android.systemui.smartspace.SmartSpaceController;
 import com.android.systemui.tuner.TunerService;
 
+=======
+>>>>>>> parent of 26563fe3f43c... SystemUI: Implement Smart space from redfin 11
 import dagger.Lazy;
 
-import java.io.FileDescriptor;
-import java.io.PrintWriter;
 import java.util.Optional;
 import java.util.concurrent.Executor;
 
@@ -107,11 +107,7 @@ import javax.inject.Inject;
 
 public class StatusBarGoogle extends StatusBar {
 
-    @Inject
-    public SmartSpaceController mSmartSpaceController;
-
     public StatusBarGoogle(
-            SmartSpaceController smartSpaceController,
             Context context,
             NotificationsController notificationsController,
             LightBarController lightBarController,
@@ -267,26 +263,22 @@ public class StatusBarGoogle extends StatusBar {
                 keyguardIndicationController,
                 dismissCallbackRegistry,
                 notificationShadeDepthControllerLazy,
+<<<<<<< HEAD
                 statusBarTouchableRegionManager,
                 tunerService);
         mSmartSpaceController = smartSpaceController;
+=======
+                statusBarTouchableRegionManager);
+>>>>>>> parent of 26563fe3f43c... SystemUI: Implement Smart space from redfin 11
     }
 
     @Override
     public void start() {
         super.start();
-        ((NotificationLockscreenUserManagerGoogle) Dependency.get(NotificationLockscreenUserManager.class)).updateSmartSpaceVisibilitySettings();
     }
 
     @Override
     public void setLockscreenUser(int i) {
         super.setLockscreenUser(i);
-        mSmartSpaceController.reloadData();
-    }
-
-    @Override
-    public void dump(FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
-        super.dump(fileDescriptor, printWriter, strArr);
-        mSmartSpaceController.dump(fileDescriptor, printWriter, strArr);
     }
 }
