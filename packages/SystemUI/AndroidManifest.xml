@@ -768,8 +768,9 @@
                 android:resource="@xml/fileprovider" />
         </provider>
 
-        <provider android:name="com.google.android.systemui.keyguard.KeyguardSliceProviderGoogle"
+        <provider android:name=".keyguard.KeyguardSliceProvider"
                   android:authorities="com.android.systemui.keyguard"
+                  android:grantUriPermissions="true"
                   android:exported="true">
         </provider>
 
