@@ -4808,36 +4808,6 @@ public final class Settings {
         public static final String MULTI_AUDIO_FOCUS_ENABLED = "multi_audio_focus_enabled";
 
         /**
-         * How many rows to show in the qs panel when in portrait
-         * @hide
-         */
-        public static final String QS_ROWS_PORTRAIT = "qs_rows_portrait";
-
-        /**
-         * How many rows to show in the qs panel when in landscape
-         * @hide
-         */
-        public static final String QS_ROWS_LANDSCAPE = "qs_rows_landscape";
-
-        /**
-         * How many columns to show in the qs panel when in portrait
-         * @hide
-         */
-        public static final String QS_COLUMNS_PORTRAIT = "qs_columns_portrait";
-
-        /**
-         * How many columns to show in the qs panel when in landscape
-         * @hide
-         */
-        public static final String QS_COLUMNS_LANDSCAPE = "qs_columns_landscape";
-
-        /**
-         * Whether to display qs tile titles in the qs panel
-         * @hide
-         */
-        public static final String QS_TILE_TITLE_VISIBILITY = "qs_tile_title_visibility";
-
-        /**
          * IMPORTANT: If you add a new public settings you also have to add it to
          * PUBLIC_SETTINGS below. If the new setting is hidden you have to add
          * it to PRIVATE_SETTINGS below. Also add a validator that can validate
@@ -4902,12 +4872,6 @@ public final class Settings {
          * @hide
          */
         public static final String DATA_DISABLED_ICON = "data_disabled_icon";
-
-	/**
-         * Whether to use new QS panel bg tint or not
-         * @hide
-         */
-        public static final String QS_PANEL_BG_USE_NEW_TINT = "qs_panel_bg_use_new_tint";
 
         /**
          * Enable/Disable screenshot sound
@@ -5042,7 +5006,6 @@ public final class Settings {
             PRIVATE_SETTINGS.add(DISPLAY_COLOR_MODE);
             PRIVATE_SETTINGS.add(AMBIENT_NOTIFICATION_LIGHT);
             PRIVATE_SETTINGS.add(AMBIENT_NOTIFICATION_LIGHT_AUTOMATIC);
-   	    PRIVATE_SETTINGS.add(QS_PANEL_BG_USE_NEW_TINT);
         }
 
         /**
