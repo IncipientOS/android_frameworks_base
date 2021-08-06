@@ -75,9 +75,6 @@ public class VolumePluginManager extends BroadcastReceiver {
         "com.android.plugin.volume.compact",
         "com.android.plugin.volume.oreo",
         "com.android.plugin.volume.tiled",
-        "co.potatoproject.plugin.volume.miui",
-        "co.potatoproject.plugin.volume.oos",
-        "co.potatoproject.plugin.volume.p404",
     };
 
     private PluginPrefs mPluginPrefs;
