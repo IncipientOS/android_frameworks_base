@@ -7440,6 +7440,9 @@ message MetricsEvent {
     // Add new aosp constants above this line.
     // END OF AOSP CONSTANTS
     
+    // Crdroid Settings
+    CRDROID_SETTINGS = 5000;
+    
     // Blinx Settings
     BLINX_SETTINGS = 4000;
 
