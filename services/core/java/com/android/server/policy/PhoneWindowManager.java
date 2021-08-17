@@ -2485,6 +2485,19 @@ public class PhoneWindowManager implements WindowManagerPolicy {
             boolean threeFingerGesture = Settings.System.getIntForUser(resolver,
                     Settings.System.THREE_FINGER_GESTURE, 0, UserHandle.USER_CURRENT) == 1;
             enableSwipeThreeFingerGesture(threeFingerGesture);
+            
+            final boolean ANBIEnabled = Settings.System.getIntForUser(resolver,
+                    Settings.System.ANBI_ENABLED, 0, UserHandle.USER_CURRENT) == 1;
+            if (mANBIHandler != null) {
+                if (mANBIEnabled != ANBIEnabled) {
+                    mANBIEnabled = ANBIEnabled;
+                    if (mANBIEnabled) {
+                        mWindowManagerFuncs.registerPointerEventListener(mANBIHandler, DEFAULT_DISPLAY);
+                    } else {
+                        mWindowManagerFuncs.unregisterPointerEventListener(mANBIHandler, DEFAULT_DISPLAY);
+                    }
+                }
+            }
 
             // Configure wake gesture.
             boolean wakeGestureEnabledSetting = Settings.Secure.getIntForUser(resolver,
@@ -2503,18 +2516,6 @@ public class PhoneWindowManager implements WindowManagerPolicy {
                 if (mLineageHardware.isSupported(LineageHardwareManager.FEATURE_KEY_DISABLE)) {
                     mLineageHardware.set(LineageHardwareManager.FEATURE_KEY_DISABLE,
                             mForceNavbar == 1);
-                }
-
-            final boolean ANBIEnabled = Settings.System.getIntForUser(resolver,
-                    Settings.System.ANBI_ENABLED, 0, UserHandle.USER_CURRENT) == 1;
-            if (mANBIHandler != null) {
-                if (mANBIEnabled != ANBIEnabled) {
-                    mANBIEnabled = ANBIEnabled;
-                    if (mANBIEnabled) {
-                        mWindowManagerFuncs.registerPointerEventListener(mANBIHandler, DEFAULT_DISPLAY);
-                    } else {
-                        mWindowManagerFuncs.unregisterPointerEventListener(mANBIHandler, DEFAULT_DISPLAY);
-                    }
                 }
             }
 
@@ -4231,7 +4232,7 @@ public class PhoneWindowManager implements WindowManagerPolicy {
             final boolean menuKey = keyCode == KeyEvent.KEYCODE_MENU;
             final boolean backKey = keyCode == KeyEvent.KEYCODE_BACK;
             final boolean assistKey = keyCode == KeyEvent.KEYCODE_ASSIST;
-            final boolean navBarKey = source == InputDevice.SOURCE_NAVIGATION_BAR;
+            final boolean navBarKey = source == InputDevice.SOURCE_KEYBOARD;
 
             if (!navBarKey && (appSwitchKey || homeKey || menuKey || backKey || assistKey)) {
                 return 0;
