@@ -35,8 +35,8 @@
     <string-array name="config_forceEnabledComponents" translatable="false">
     </string-array>
 
-    <!-- Default value for Horizon light color (Blue) -->
-    <integer name="config_AmbientPulseLightColor">0x3980FF</integer>
+    <!-- Default value for Horizon light color (Incipient green) -->
+    <integer name="config_AmbientPulseLightColor">0xAED581</integer>
     
     <!-- Whether device has dash charging support -->
     <bool name="config_hasDashCharger">false</bool>
