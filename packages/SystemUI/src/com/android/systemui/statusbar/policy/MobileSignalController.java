@@ -107,9 +107,6 @@ public class MobileSignalController extends SignalController<
     private FeatureConnector<ImsManager> mFeatureConnector;
     private int mCallState = TelephonyManager.CALL_STATE_IDLE;
 
-    private ImsManager mImsManager;
-    private int mCallState = TelephonyManager.CALL_STATE_IDLE;
-
     // TODO: Reduce number of vars passed in, if we have the NetworkController, probably don't
     // need listener lists anymore.
     public MobileSignalController(Context context, Config config, boolean hasMobileData,
