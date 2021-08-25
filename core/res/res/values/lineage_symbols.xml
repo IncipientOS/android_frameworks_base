@@ -50,10 +50,6 @@
     <!-- Enable face auth only when swiping security view -->
     <java-symbol type="bool" name="config_faceAuthOnlyOnSecurityView" />
 
-    <!-- Smart cutoff temperature -->
-    <java-symbol type="integer" name="config_smartCutoffTemperature" />
-    <java-symbol type="integer" name="config_smartCutoffResumeTemperature" />
-
     <!-- Pocket Lock -->
     <java-symbol type="layout" name="pocket_lock_view" />
 
